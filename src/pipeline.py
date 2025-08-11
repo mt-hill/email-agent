@@ -1,6 +1,6 @@
 from src.log import logger
-from client import OllamaClient
-from models import EmailData
+from src.client import OllamaClient
+from src.models import EmailData
 
 
 class EmailProcessor:
@@ -127,8 +127,10 @@ The response should:
 - Address the specific type of inquiry appropriately
 - Include relevant department-specific information
 - Provide clear next steps
-- Be professional and helpful"""
-        
+- Be professional and helpful
+- Should be concise and to the point
+"""
+
         try:
             response = self.llm_client.generate(prompt)
             logger.info("Response generated successfully")
