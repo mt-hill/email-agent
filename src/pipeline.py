@@ -1,4 +1,4 @@
-from log import logger
+from src.log import logger
 from client import OllamaClient
 from models import EmailData
 

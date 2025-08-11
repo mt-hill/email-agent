@@ -1,7 +1,7 @@
-from client import OllamaClient
-from models import EmailData
-from pipeline import EmailProcessor
-from log import logger
+from src.client import OllamaClient
+from src.models import EmailData
+from src.pipeline import EmailProcessor
+from src.log import logger
 
 from datetime import datetime
 
